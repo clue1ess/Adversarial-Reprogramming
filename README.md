@@ -2,6 +2,13 @@
 
 Implementation of paper : https://arxiv.org/pdf/1806.11146.pdf
 
+### Dependencies
+
+- pytorch
+- matplotlib
+- numpy<br><br>
+Install these libraries before running.
+
 ### How to run
 
 First, to train CIFAR10 dataset :<br>
