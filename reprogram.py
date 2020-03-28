@@ -151,9 +151,9 @@ def main():
         model = MNIST(int(sys.argv[1]), int(sys.argv[2]), float(sys.argv[3]), float(sys.argv[4]), int(sys.argv[5]), sys.argv[6])
         model.training_step()
 
-    elif(len(sys.argv) == 1):
+    elif(len(sys.argv) == 2):
         model = CIFAR10()
-        model.training_step()
+        model.training_step(filename = sys.argv[1])
 
     else:
         print("Incomplete arguments")
