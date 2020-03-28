@@ -140,7 +140,7 @@ class CIFAR10():
             transforms.ToTensor(),
             transforms.Normalize((0.,0.,0.),(1.,1.,1.))
         ])
-        train_dataset = torchvision.datasets.CIFAR10(root='../data/',
+        train_dataset = torchvision.datasets.CIFAR10(root='data/',
                                            train=True, 
                                            transform=train_transform,
                                            download=True)
@@ -155,7 +155,7 @@ class CIFAR10():
             transforms.ToTensor(),
             transforms.Normalize((0.,0.,0.),(1.,1.,1.))
         ])
-        val_dataset = torchvision.datasets.CIFAR10(root='../data/',
+        val_dataset = torchvision.datasets.CIFAR10(root='data/',
                                            train=True, 
                                            transform=val_transform,
                                            download=True)
@@ -170,7 +170,7 @@ class CIFAR10():
             transforms.ToTensor(),
             transforms.Normalize((0.,0.,0.),(1.,1.,1.))
         ])
-        test_dataset = torchvision.datasets.CIFAR10(root='../data/',
+        test_dataset = torchvision.datasets.CIFAR10(root='data/',
                                           train=False, 
                                           transform=test_transform)
         test_loader = torch.utils.data.DataLoader(dataset = test_dataset,

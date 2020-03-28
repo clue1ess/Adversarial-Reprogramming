@@ -63,7 +63,7 @@ class Reprogramming(torch.nn.Module) :
 
     def train_dataloader(self):
         mnist_transform = torchvision.transforms.Compose([transforms.Resize((self.img_size,self.img_size)), transforms.ToTensor()])
-        train_dataset = torchvision.datasets.MNIST(root='../data/',
+        train_dataset = torchvision.datasets.MNIST(root='data/',
                                            train=True, 
                                            transform=mnist_transform,
                                            download=True)
@@ -74,7 +74,7 @@ class Reprogramming(torch.nn.Module) :
     
     def test_dataloader(self):
         mnist_transform = torchvision.transforms.Compose([transforms.Resize((self.img_size,self.img_size)), transforms.ToTensor()])
-        test_dataset = torchvision.datasets.MNIST(root='../data/',
+        test_dataset = torchvision.datasets.MNIST(root='data/',
                                            train=False, 
                                            transform=mnist_transform,
                                            download=True)
