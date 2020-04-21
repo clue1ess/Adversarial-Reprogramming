@@ -36,3 +36,6 @@ Run the following:<br><br>
 `python3 reprogram.py [batch_size] [num_epochs] [lr] [momentum] [img_size] [filename]`<br><br>
 Or run the following for default parameters<br><br>
 `python reprogram.py [filename]`
+
+**Note**: If you wish to train reprogramming model on saved weights for cifar model,run <br>
+`python3 reprogram.py`

@@ -48,8 +48,8 @@ class Reprogramming(torch.nn.Module) :
         y = self.model(x)
         return y
     
-    class MNIST(): 
-    def __init__(self, batch_size = 100, num_epochs = 50, learning_rate = 0.1, momentum = 0.9, img_size = 14, filename):
+    class MNIST(): .pt
+    def __init__(self, batch_size = 100, num_epochs = 50, learning_rate = 0.1, momentum = 0.9, img_size = 14, filename = "resnet_48.pt"):
         self.learning_rate = learning_rate
         self.momentum = momentum
         self.batch_size = batch_size
@@ -152,8 +152,12 @@ def main():
         model.training_step()
 
     elif(len(sys.argv) == 2):
-        model = CIFAR10()
-        model.training_step(filename = sys.argv[1])
+        model = MNIST(filename = sys.argv[1])
+        model.training_step()
+
+    elif(len(sys.argv) == 1):
+	model = MNIST()
+        model.training_step()	
 
     else:
         print("Incomplete arguments")
