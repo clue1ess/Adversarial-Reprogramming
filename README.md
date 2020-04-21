@@ -4,14 +4,14 @@ Implementation of paper : https://arxiv.org/pdf/1806.11146.pdf
 
 ### Dependencies
 
+Install these libraries before running.
 - pytorch
 - matplotlib
-- numpy<br><br>
-Install these libraries before running.
+- numpy
 
 ### How to run
 
-First, to train CIFAR10 dataset :<br>
+First, to train CIFAR10 dataset :<br><br>
 List of arguments required :<br>
 - batch_size of CIFAR10 images
 - number of epochs
@@ -24,7 +24,7 @@ Run the following:<br><br>
 Or run the following for default parameters<br><br>
 `python cifar.py `
 
-Now for reprogramming: <br>
+Now for reprogramming: <br><br>
 List of arguments required :<br>
 - batch_size of CIFAR10 images
 - number of epochs
