@@ -1,6 +1,6 @@
 # Adversarial-Reprogramming
 
-Implementation of paper : https://arxiv.org/pdf/1806.11146.pdf
+Pytorch implementation of paper : https://arxiv.org/pdf/1806.11146.pdf
 
 ### Dependencies
 
